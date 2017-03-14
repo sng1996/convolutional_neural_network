@@ -1,5 +1,8 @@
 class BaseTestExamples:
     cellsTestArray = []
 
-    def appTestExample(self, *Cells):
+    def BaseTestExamples(self, *params):
+        pass
+
+    def appTestExample(self, *Cells, *params):
         pass

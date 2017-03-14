@@ -1,2 +1,4 @@
 class GenerateExample:
-    pass
+
+    def generateExample(self, *cells, *params):
+        pass
