@@ -1,0 +1,2 @@
+class GenerateExample:
+    pass

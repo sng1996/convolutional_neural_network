@@ -1,0 +1,3 @@
+class BaseLearningExamples:
+    cellsArray = []
+    gradArray = []
