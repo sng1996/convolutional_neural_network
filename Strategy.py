@@ -1,2 +1,3 @@
 class Strategy:
-    pass
+    def gradient (cells, x)
+        pass
