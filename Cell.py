@@ -1,8 +1,8 @@
 class Cell:
     density = 1.0
-    variables = dict()
+    variables = {'v':10 , 'p': 1000}
     xyz= (0.0,0.0,0.0)
 
 
     def Cell (self):
-        pass
+        print "init Cells"

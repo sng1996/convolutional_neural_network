@@ -1,5 +1,7 @@
 class Solver:
     def run(self, task):
-        pass
-    def check ():
-        pass
+        print "run solver"
+
+
+    def check (self):
+        print "check solver"

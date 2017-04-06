@@ -1,20 +1,31 @@
+import Cell
+
 class OptimizationTask:
+    # x - variables
+    task = None
+    strategy = None
+    cells = Cell.Cell()
 
-    task = null
-    strategy = null
-
-    def objective (self, x)
+    def OptimizationTask(self):
         pass
 
-    def constrants (self,x)
-        pass
+    def objective (self, x):
+        print "objective calculation X"
 
-    def criteria (self)
-        pass
+    def constrants (self,x):
+        print "calculation constrains values"
 
-    def init (self)
-        pass
+    def criteria (self):
+        print "calculation criterias"
 
-    def gradient (self,x)
+    def init (self):
+        print "optimizationTask init (create objective)"
+        #self.cells = Cell.Cell()
+        self.objective(0)
+        self.constrants(0)
+        self.criteria()
 
-        return strategy.gradient(task.cells, x)
+
+    def gradient (self,x, strategy):
+        print "calculation OPTask gradient"
+        return strategy.gradient(self.cells, x)

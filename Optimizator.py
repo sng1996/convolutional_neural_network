@@ -1,7 +1,19 @@
+import scipy
+from scipy.optimize import minimize
+import OptimizationTask
 class Optimizator:
 
-    def optimize (optimization_task)
-        res = scipy.optimize (ot.objective, gradient(), ot.constraints)
-        print res[0], res[1]
+    x = []
+    optimization_task = OptimizationTask.OptimizationTask()
 
-        return (code, obj_value, const_values, densities)
+    def optimize (self, gradient, objective):
+        print "start optimizator work"
+
+        res = minimize(objective, gradient)
+        #strat.gradient(self.x),
+        #print res[0], res[1]
+        print "res[0] res[1]"
+        return res
+#                self.optimization_task.objective(self.x),
+#                self.optimization_task.constrants(self.x),
+#                self.optimization_task.cells.density)

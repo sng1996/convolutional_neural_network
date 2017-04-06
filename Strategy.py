@@ -1,3 +1,3 @@
 class Strategy:
-    def gradient (cells, x)
-        pass
+    def gradient (self, cells, x):
+        print "calculation strategy gradient"
